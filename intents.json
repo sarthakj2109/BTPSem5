@@ -1,0 +1,103 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?","Greetings! Welcome to the CoWIN portal"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Stay safe", "Goodbye! Have a great day ahead", "Bye bye. Remember that vaccination is safe"],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure", "Always a pleasure! Do ping me if you need any more help!"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure, I understand", "It seems I didn't get you. Please try again", "I don't understand. Can you try again?"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered", "I need help", "I am stuck"],
+         "responses": ["I can guide you through the features offered by the website, vaccination slot booking, searching available centres, downloading vaccine certificate, verifying cerificate","Using the CoWIN website you can \n1)Book your vaccination slot\n2)Search availability at a vaccination centre\n3)Download your vaccination certificate\n4)Verify your cerificate\nWhat do you need help with?"],
+         "context": [""]
+        },
+        {"tag": "slot_booking",
+         "patterns": ["How to book a vaccination slot?", "I want to book a slot", "I want to get vaccinated", "Steps to book a vaccination slot", "Information on slot booking"],
+         "responses": ["Steps to book your vaccination slot: \n1)Click on book your slot option\n2)Enter Mobile Number to register/sign in and then click on Get OTP\n3)Enter 6 digit OTP and click, verify and proceed\n4) For first time users, you need to enter details of ID proof. For existing users, click on book my slot and follow the instructions"],
+         "context": [""]
+        },
+        {"tag": "verify_certificate",
+         "patterns": ["How to verify your cerificate", "Is my certificate real", "I think my certificate is fake", "I feel I am cheated", "Vaccine certificate Verification","Check whether certificate is valid"],
+         "responses": ["To verify your vaccination certificate, click on Verify Cerificate option in the top blue menu or on the homepage and follow the listed steps "],
+         "context": [""]
+        },
+        {"tag": "search_centre",
+         "patterns": ["I want to search for a vaccination centre", "vaccination centres near me", "Vaccine centre at my location", "Where can I get my vaccine shot", "Search centre by pincode", "Search centre using google maps", "Centre in my district", "Check slot availability" ],
+         "responses": ["You can Check Your Nearest Vaccination Center And Slots Availability and search based on pin code, district or map"],
+         "context": [""]
+        },
+        {"tag": "FAQ1",
+         "patterns": ["Is online registration mandatory for Covid 19 vaccination?","Manadatory register?","Is it compulsory to register online?" ],
+         "responses": [" Vaccination Centres provide for a limited number of on-spot registration slots every day. Beneficiaries aged 45 years and above can schedule appointments online or walk-in to vaccination centres. Beneficiaries aged 18 years and above can schedule appointments online or walk-in to Government vaccination centres. However, beneficiaries aged 18-44 years should mandatorily register themselves and schedule appointment online before going to a Private vaccination centre.\nIn general, all beneficiaries are recommended to register online and schedule vaccination in advance for a hassle-free vaccination experience."],
+         "context": [""]
+        },
+        {"tag": "FAQ2",
+         "patterns": ["How many people can be registered in the CoWIN portal through one mobile number? ","How can I register my family members?"],
+         "responses": ["Up to 4 people can be registered for vaccination using the same mobile number", "You can register upto 4 people or family members using one mobile number"],
+         "context": [""]
+        },
+        {"tag": "FAQ3",
+         "patterns": ["Can I register for vaccination without Aadhaar card?","Documents required for registration","I don't have Adhaar card to register"],
+         "responses": ["You can register on CoWIN portal using any of the following ID proofs:\na. Aadhaar card\nb. Driving License\nc. PAN card\nd. Passport\ne. Pension Passbook\nf. NPR Smart Card\ng. Voter ID (EPIC)\nh. Unique Disability ID (UDID)\ni. Ration Card"],
+         "context": [""]
+        },
+        {"tag": "FAQ4",
+         "patterns": ["Is there any registration charges to be paid?","Registration fees?","Cost for one registration?","Payment for registration?","Is registration free?"],
+         "responses": ["Registration is completely free of cost","No registration fees to be paid whatsoever"],
+         "context": [""]
+        },
+        {"tag": "FAQ5",
+         "patterns": ["Can I check the vaccine being administered at each vaccination centre?", "I want a specific vaccine", "How to check vaccine type?"],
+         "responses": ["While scheduling an appointment for vaccination, the system will show vaccination centre names along with the name of the vaccine that will be administered"],
+         "context": [""]
+        },
+        {"tag": "reschedule",
+         "patterns": ["Can I reschedule my appointment?", "rescheduling procedure", "How to reschedule?", "I missed my slot? How to rebook?","Manage Appointment"],
+         "responses": ["The appointment can be rescheduled at any time. In case you are not able to go for vaccination on the date of appointment, you can reschedule the appointment by clicking on 'Manage Appointment' option under Vaccination Services tab."],
+         "context": [""]
+        },
+        {"tag": "FAQ7",
+         "patterns": ["Where will I receive confirmation of date and time of vaccination?","I booked my vaccine. How to know date and time?","Confirmation messgae?","Date and time of vaccination?"],
+         "responses": ["Once an appointment is scheduled, you will receive the details of the vaccination centre, date and time slot chosen for appointment in an SMS sent to your registered mobile number. You can also download the appointment slip and print it or keep it on your smart phone. "],
+         "context": [""]
+        },
+        {"tag": "FAQ8",
+         "patterns": ["No appointments are available in this period", "It shows No appointments available", "When I click on vaccination centre it shows 'No appointments are available in this period'. What to do? "],
+         "responses": ["In case of no availability of slots for scheduling appointment for vaccination in the searched vaccination centre, you may try scheduling appointment in other nearby centres. The portal gives you the feature of searching vaccination centres using your PIN code and District."],
+         "context": [""]
+        },
+        {"tag": "download_cerificate",
+         "patterns": ["Where can I download my certificate?","How to download vaccination certificate?","Download vaccination certificate"],
+         "responses": ["Upon succesful vaccination, you can download your certificate from the CoWIN website. On the homepage, under Vaccination Services Menu, choose download certificate option. Sign in and click on download certificate button to get your certificate in pdf form"],
+         "context": [""]
+        },
+        {"tag": "stats",
+         "patterns": ["Vaccination stats?", "How to view vaccination stats?","How many people have taken the vaccine?", "Statewise statistics?"],
+         "responses": ["Checkout the CoWIN dashboard for all statistics related to covid vaccination."],
+         "context": [""]
+        },
+        {"tag": "language",
+         "patterns": ["I can't read in English", "How to change the language on the website?","View the page in Hindi", "I don't understand the language"],
+         "responses": ["You can easily change the language of the page. To change, click on English on the top blue menu and choose your preferred language"],
+         "context": [""]
+        },
+        {"tag": "contact_us",
+         "patterns": ["Helpline number", "Phone number please?","Contact Details", "How to contact CoWIN?"],
+         "responses": ["Helpline number: +91 11 23978046 (Toll Free - 1075 )\n Technical Helpline : 0120 4473222\n Mental health issues: 08046110007"],
+         "context": [""]
+        }
+   ]
+}
